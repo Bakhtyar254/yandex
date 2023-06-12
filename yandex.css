@@ -1,0 +1,102 @@
+body{
+    background: rgb(15, 44, 194);
+    background-color: rgb(15, 44, 194);
+    margin: 10px;
+    display: flex;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+    overflow: auto;
+    margin: 30px;
+    
+}
+.circle::before {
+    background-color: yellow;
+    content: '';
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+
+.circle::after {
+    background-color: yellow;
+    content: '';
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+}
+
+.sq{
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 10px;
+    position: relative;
+    overflow: auto;
+    margin: 30px;
+}
+
+.sq::before {
+    background-color: white;
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.sq::after {
+    background-color: black;
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+}
+
+.card{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: auto; 
+    margin: 30px;
+}
+
+.card::after{
+    background-color: rgb(15, 44, 194);
+    content: '';
+    border-radius: 5px;
+    width: 25px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right:15px ;
+    
+}
+.card::before{
+    background-color: rgb(15, 44, 194);
+    content: '';
+    border-radius: 5px;
+    width: 25px;
+    height: 60px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+
